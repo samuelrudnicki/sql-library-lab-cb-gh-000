@@ -39,8 +39,7 @@ def select_series_title_with_most_human_characters
   SELECT series.title
   FROM series INNER JOIN authors ON series.author_id = authors.id
               INNER JOIN characters ON authors.id = characters.author_id
-  WHERE characters.species = human
-  LIMIT 1
+  WHERE characters.species ="human"
   "
 end
 
