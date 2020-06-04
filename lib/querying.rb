@@ -43,7 +43,7 @@ def select_series_title_with_most_human_characters
   HAVING characters.species = 'human'
   ORDER BY count(*) DESC
   LIMIT 1
-  
+
   "
 end
 
